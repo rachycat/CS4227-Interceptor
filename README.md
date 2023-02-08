@@ -4,7 +4,7 @@
 
 ### Code Submission
 1.	The code (5 marks): 
-  *	Illustrative application which must be one of CDplayer with play and stop buttons
+  *	Illustrative application which must be one of Movie Rental system based on Chapter 1 from Fowler’s Refactoring text
   * Interceptor 
   * Concrete Interceptor 
   * Dispatcher
