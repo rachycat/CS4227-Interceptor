@@ -3,6 +3,9 @@ package MovieRental;
 import java.util.ArrayList;
 import java.util.List;
 
+import Interceptor.ContextObject;
+import Interceptor.Dispatcher;
+
 public class Customer {
 
     private String _name;
@@ -13,6 +16,9 @@ public class Customer {
     }
 
     public void addRental(Rental arg) {
+        //interception point
+        ContextObject con = new ContextObject(arg, this);
+        Dispatcher.getDispatcher().interceptRental(con);
         rentals.add(arg);
     }
 

@@ -38,11 +38,11 @@ public class Movie {
         return _title;
     }
 
-    double getCharge(int daysRented) {
+    public double getCharge(int daysRented) {
         return _price.getCharge(daysRented);
     }
 
-    int getFrequentRenterPoints(int daysRented) {
+    public int getFrequentRenterPoints(int daysRented) {
         return _price.getFrequentRenterPoints(daysRented);
     }
 }

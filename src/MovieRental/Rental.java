@@ -4,11 +4,11 @@ public class Rental {
     private Movie _movie;
     private int _daysRented;
 
-    double getCharge() {
+    public double getCharge() {
         return _movie.getCharge(_daysRented);
     }
 
-    int getFrequentRenterPoints() {
+    public int getFrequentRenterPoints() {
         return _movie.getFrequentRenterPoints(_daysRented);
     }
 
